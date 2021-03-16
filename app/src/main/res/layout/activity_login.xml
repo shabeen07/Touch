@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.LoginActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Sign In"
+            android:background="@color/white"
+            android:elevation="0dp"
+            app:titleTextAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="14dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="We will send you ONE TIME PASSWORD (OTP) on this mobile number"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Enter mobile number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="52dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    app:textSize="14sp"
+                    app:defaultNameCode="IN"
+                    app:keyboardAutoPopOnSearch="false"
+                    app:defaultCode="91"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@color/white">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edMobileNo"
+                        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_gravity="center"
+                        android:gravity="left|center"
+                        android:hint="Enter mobile number"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp"/>
+            <Button
+                android:id="@+id/btn_generateOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:text="Send Otp"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle1"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

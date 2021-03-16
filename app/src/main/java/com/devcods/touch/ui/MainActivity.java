@@ -1,9 +1,11 @@
-package com.devcods.touch;
+package com.devcods.touch.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.StrictMode;
+
+import com.devcods.touch.R;
 
 public class MainActivity extends AppCompatActivity {
 

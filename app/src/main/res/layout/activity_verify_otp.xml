@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.VerifyOtpActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="OTP Verification"
+            android:background="@color/white"
+            app:titleTextAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle"
+            app:navigationIcon="@drawable/ic_arrow_back">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="14dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:id="@+id/layout_register"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Enter OTP sent to"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle2"
+                    />
+                <TextView
+                    android:id="@+id/tvMobileNO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle1" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp"/>
+            <com.alimuzaffar.lib.pin.PinEntryEditText
+                android:id="@+id/ed_pinEntry"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:cursorVisible="false"
+                android:focusable="true"
+                android:layout_gravity="center"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textIsSelectable="false"
+                app:pinCharacterSpacing="6dp"
+                android:textSize="20sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Didn't receive the OTP?"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption"
+                />
+            <Button
+                android:id="@+id/btn_resendOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="Resend OTP"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp"/>
+            <Button
+                android:id="@+id/btn_verifyOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:text="Verify"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle1"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
