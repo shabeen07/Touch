@@ -44,6 +44,7 @@ dependencies {
     implementation 'androidx.preference:preference:1.1.1'
 
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     def lottieVersion = "3.3.0"
     implementation "com.airbnb.android:lottie:$lottieVersion"
