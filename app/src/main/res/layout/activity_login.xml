@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:title="Sign In"
+            app:titleTextColor="@color/black"
             android:background="@color/white"
             android:elevation="0dp"
             app:titleTextAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle">
@@ -35,6 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="6dp"
+                android:textColor="@color/black"
                 android:text="We will send you ONE TIME PASSWORD (OTP) on this mobile number"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
