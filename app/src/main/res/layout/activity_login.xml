@@ -10,14 +10,14 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:background="@color/backgroundColor">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:title="Sign In"
-            app:titleTextColor="@color/black"
-            android:background="@color/white"
+            app:titleTextColor="@color/onBackgroundColor"
+            android:background="@color/backgroundColor"
             android:elevation="0dp"
             app:titleTextAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle">
         </androidx.appcompat.widget.Toolbar>
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="6dp"
-                android:textColor="@color/black"
+                android:textColor="@color/onBackgroundColor"
                 android:text="We will send you ONE TIME PASSWORD (OTP) on this mobile number"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
@@ -59,6 +59,7 @@
                 android:layout_height="wrap_content"
                 android:minHeight="52dp"
                 android:gravity="center"
+                android:background="@color/backgroundColor"
                 android:orientation="horizontal">
                 <com.hbb20.CountryCodePicker
                     android:id="@+id/ccp"
@@ -68,6 +69,7 @@
                     android:layout_gravity="center"
                     app:textSize="14sp"
                     app:defaultNameCode="IN"
+                    app:contentColor="@color/onBackgroundColor"
                     app:keyboardAutoPopOnSearch="false"
                     app:defaultCode="91"/>
                 <com.google.android.material.textfield.TextInputLayout
@@ -75,20 +77,20 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:layout_gravity="center"
-                    android:background="@color/white">
+                    android:background="@color/backgroundColor">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edMobileNo"
                         android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
+                        android:background="@color/backgroundColor"
                         android:layout_gravity="center"
                         android:gravity="left|center"
                         android:hint="Enter mobile number"
                         android:inputType="phone"
                         android:maxLength="10"
                         android:layout_marginBottom="8dp"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/onBackgroundColor" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
             <Space

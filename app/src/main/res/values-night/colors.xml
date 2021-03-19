@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#607d8b</color>
-    <color name="primaryVariantColor">#34515e</color>
+    <color name="primaryColor">#b0bec5</color>
+    <color name="primaryVariantColor">#455a64</color>
     <color name="primaryLightColor">#8eacbb</color>
     <color name="primaryDarkColor">#34515e</color>
-    <color name="secondaryColor">#e0f2f1</color>
-    <color name="secondaryVariantColor">#00796b</color>
+    <color name="secondaryColor">#80deea</color>
+    <color name="secondaryVariantColor">#80deea</color>
     <color name="secondaryLightColor">#ffffff</color>
     <color name="secondaryDarkColor">#aebfbe</color>
-    <color name="backgroundColor">#ffffff</color>
-    <color name="onBackgroundColor">#000000</color>
-    <color name="surfaceColor">#ffffff</color>
-    <color name="onSurfaceColor">#000000</color>
-    <color name="errorColor">#b00020</color>
-    <color name="onErrorColor">#ffffff</color>
-    <color name="onPrimaryColor">#ffffff</color>
+    <color name="backgroundColor">#121212</color>
+    <color name="onBackgroundColor">#ffffff</color>
+    <color name="surfaceColor">#121212</color>
+    <color name="onSurfaceColor">#ffffff</color>
+    <color name="errorColor">#cf6679</color>
+    <color name="onErrorColor">#000000</color>
+    <color name="onPrimaryColor">#000000</color>
     <color name="onSecondaryColor">#000000</color>
 
     <color name="blue_grey_50">#eceff1</color>

@@ -8,14 +8,14 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:background="@color/backgroundColor">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:title="OTP Verification"
-            android:background="@color/white"
-            app:titleTextColor="@color/black"
+            android:background="@color/backgroundColor"
+            app:titleTextColor="@color/onBackgroundColor"
             app:titleTextAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle"
             app:navigationIcon="@drawable/ic_arrow_back">
         </androidx.appcompat.widget.Toolbar>
@@ -42,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:padding="6dp"
                     android:text="Enter OTP sent to"
-                    android:textColor="@color/black"
+                    android:textColor="@color/onBackgroundColor"
                     android:gravity="center"
                     android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle2"
                     />
